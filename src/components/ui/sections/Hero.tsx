@@ -10,7 +10,7 @@ const Hero = () => {
                     En iyi dostlarınız için, güvenilir veteriner hizmetleri
                 </h1>
                 <p className={"text-lg font-light mobile:text-sm"}>
-                    Ulus ve Beşiktaş'ın Kalbindeki Rainbow Veteriner Kliniği
+                    Ulus ve Beşiktaş&apos;ın Kalbindeki Rainbow Veteriner Kliniği
                 </p>
                 <Button size={"lg"} variant={"default"} className={"mt-3"}>
                     Randevu Alın
