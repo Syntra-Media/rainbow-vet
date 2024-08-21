@@ -3,7 +3,7 @@ import {Phone} from "lucide-react";
 
 const Emergency = () => {
     return (
-        <div className={"w-full flex"}>
+        <div id={"emergency"} className={"w-full flex"}>
             <div className={"w-full h-full mx-16 my-16 flex flex-col gap-6"}>
                 <h2 className={"text-4xl font-bold"}>
                     Acil Durumlar

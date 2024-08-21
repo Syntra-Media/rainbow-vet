@@ -4,7 +4,7 @@ import {Button} from "@/components/ui/Button";
 
 const Services = () => {
     return (
-        <div className={"w-full flex"}>
+        <div id={"services"} className={"w-full flex"}>
             <div className={"w-full h-full flex flex-col gap-6 mx-16 my-16"}>
                 <h2 className={"font-bold text-4xl"}>
                     Hizmetlerimiz

@@ -1,13 +1,47 @@
 "use client"
 
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Button} from "@/components/ui/Button";
 import { MenuIcon } from 'lucide-react';
 import {cn} from "@/utils/cn";
 
+const ROUTES = [
+    {
+        id: "home",
+        name: "Anasayfa"
+    },
+    {
+        id: "aboutus",
+        name: "Hakkımızda"
+    },
+    {
+        id: "services",
+        name: "Hizmetlerimiz"
+    },
+    {
+        id: "testimonials",
+        name: "Müşteri Yorumları"
+    },
+    {
+        id: "emergency",
+        name: "Acil Durumlar"
+    },
+]
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [selectedSection, setSelectedSection] = useState("home");
+
+    useEffect(() => {
+        const section = document.getElementById(selectedSection);
+        if (section) {
+            section.scrollIntoView({behavior: "smooth"});
+        }
+
+        if (isMenuOpen) {
+            setIsMenuOpen(false);
+        }
+    }, [selectedSection]);
 
     return (
         <div className={"absolute w-full h-24 flex"}>
@@ -19,19 +53,14 @@ const Header = () => {
                     isMenuOpen &&
                         <div className={"absolute top-0 left-0 h-screen bg-section/20 backdrop-blur w-48 flex"}>
                             <div className={"flex flex-col mx-4 my-4 gap-3"}>
-                                <a>
-                                    Hakkımızda
-                                </a>
-                                <a>
-                                    Hizmetlerimiz
-                                </a>
-                                <a>
-                                    Müşteri Yorumları
-                                </a>
-                                <a>
-                                    Acil Durumlar
-                                </a>
-                                <Button variant={"default"} size={"sm"}>
+                                {
+                                    ROUTES.map(route => (
+                                        <a key={route.id} onClick={() => setSelectedSection(route.id)} className={"pointer-events-auto cursor-pointer"}>
+                                            {route.name}
+                                        </a>
+                                    ))
+                                }
+                                <Button variant={"default"}>
                                     Bize Ulaşın
                                 </Button>
                             </div>
@@ -48,19 +77,14 @@ const Header = () => {
                         </div>
                     </Button>
                     <div className={"flex items-center gap-4 md:hidden"}>
-                        <a>
-                            Hakkımızda
-                        </a>
-                        <a>
-                            Hizmetlerimiz
-                        </a>
-                        <a>
-                            Müşteri Yorumları
-                        </a>
-                        <a>
-                            Acil Durumlar
-                        </a>
-                        <Button variant={"default"} size={"sm"}>
+                        {
+                            ROUTES.map(route => (
+                                <a key={route.id} onClick={() => setSelectedSection(route.id)} className={"pointer-events-auto cursor-pointer"}>
+                                    {route.name}
+                                </a>
+                            ))
+                        }
+                        <Button variant={"default"}>
                             Bize Ulaşın
                         </Button>
                     </div>

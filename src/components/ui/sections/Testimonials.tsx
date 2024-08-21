@@ -7,7 +7,7 @@ import Testimonial from "@/components/ui/Testimonial";
 
 const Testimonials = () => {
     return (
-        <div className={"w-full flex"}>
+        <div id={"testimonials"} className={"w-full flex"}>
             <div className={"w-full h-full flex flex-col mx-16 my-16 gap-6"}>
                 <h2 className={"text-4xl font-bold"}>
                     Müşteri Yorumları

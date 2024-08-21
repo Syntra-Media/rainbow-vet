@@ -6,7 +6,7 @@ import {MapPinHouse, Phone} from "lucide-react";
 
 const ContactUs = () => {
     return (
-        <div className={"w-full flex"}>
+        <div id={"contactus"} className={"w-full flex"}>
             <div className={"w-full h-full flex flex-col gap-6 mx-16 my-16"}>
                 <h2 className={"text-4xl font-bold"}>
                     Bize Ulaş
