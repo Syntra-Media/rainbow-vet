@@ -12,7 +12,9 @@ type CardProps = {
 const Card = ({title, description, image, className}: CardProps) => {
     return (
         <div className={"flex w-full flex-col rounded-lg bg-cardComponent border border-stroke"}>
-            <Image src={image} alt={"Test"} width={1024} height={1024} className={"w-full max-h-36 rounded-t-lg object-cover"} draggable={false}/>
+            <div className={"flex w-full max-h-36 overflow-hidden"}>
+                <Image src={image} alt={"Test"} width={1024} height={1024} className={"w-full h-full hover:scale-105 transition-all rounded-t-lg object-cover"} draggable={false}/>
+            </div>
             <div className={"w-full h-full flex"}>
                 <div className={"flex flex-col gap-2 w-full h-full px-4 py-4"}>
                     <p className={"font-medium"}>

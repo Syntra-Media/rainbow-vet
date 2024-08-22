@@ -1,10 +1,18 @@
+"use client";
+
 import React from 'react';
 import Card from "@/components/ui/Card";
 import {Button} from "@/components/ui/Button";
+import { motion } from 'framer-motion';
 
 const Services = () => {
     return (
-        <div id={"services"} className={"w-full flex"}>
+        <motion.div id={"services"} className={"w-full flex"}
+            whileInView={{opacity: 1}}
+            initial={{opacity: 0}}
+            transition={{duration: 1.5}}
+            viewport={{once: true}}
+        >
             <div className={"w-full h-full flex flex-col gap-6 mx-16 my-16"}>
                 <h2 className={"font-bold text-4xl"}>
                     Hizmetlerimiz
@@ -40,7 +48,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

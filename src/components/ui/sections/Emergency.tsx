@@ -1,10 +1,18 @@
+"use client";
+
 import React from 'react';
 import {Phone} from "lucide-react";
+import { motion } from 'framer-motion';
 
 const Emergency = () => {
     return (
         <div id={"emergency"} className={"w-full flex"}>
-            <div className={"w-full h-full mx-16 my-16 flex flex-col gap-6"}>
+            <motion.div className={"w-full h-full mx-16 my-16 flex flex-col gap-6"}
+                        whileInView={{opacity: 1}}
+                        initial={{opacity: 0}}
+                        transition={{duration: 1.5}}
+                        viewport={{once: true}}
+            >
                 <h2 className={"text-4xl font-bold"}>
                     Acil Durumlar
                 </h2>
@@ -32,7 +40,7 @@ const Emergency = () => {
                         ister hafta sonu, kapımız her zaman açık. Anında müdahale gerektiren durumlarda bize güvenle başvurabilirsiniz. Evcil hayvanınızın sağlığı söz konusu olduğunda, hiçbir zaman beklemek zorunda kalmayacaksınız.
                     </p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

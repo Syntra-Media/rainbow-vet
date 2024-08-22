@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 import {Button} from "@/components/ui/Button";
 import { MenuIcon } from 'lucide-react';
 import {cn} from "@/utils/cn";
+import { motion } from 'framer-motion';
 
 const ROUTES = [
     {
@@ -44,7 +45,11 @@ const Header = () => {
     }, [selectedSection]);
 
     return (
-        <div className={"absolute w-full h-24 flex"}>
+        <motion.div className={"absolute w-full h-24 flex"}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 1, delay:1}}
+        >
             <div className={"flex w-full h-full mx-12 justify-between items-center text-white xl:text-lg"}>
                 <div className={"flex"}>
                     Rainbow Veteriner Kliniği
@@ -52,7 +57,7 @@ const Header = () => {
                 {
                     isMenuOpen &&
                         <div className={"absolute top-0 left-0 h-screen bg-section/20 backdrop-blur w-48 flex"}>
-                            <div className={"flex flex-col mx-4 my-4 gap-3"}>
+                            <div className={"flex flex-col mx-4 my-4 gap-3 text-sm"}>
                                 {
                                     ROUTES.map(route => (
                                         <a key={route.id} onClick={() => setSelectedSection(route.id)} className={"pointer-events-auto cursor-pointer"}>
@@ -76,10 +81,10 @@ const Header = () => {
                                       className={cn("transition-all", isMenuOpen ? "rotate-90" : "rotate-0")}/>
                         </div>
                     </Button>
-                    <div className={"flex items-center gap-4 md:hidden"}>
+                    <div className={"flex items-center md:hidden font-medium"}>
                         {
                             ROUTES.map(route => (
-                                <a key={route.id} onClick={() => setSelectedSection(route.id)} className={"pointer-events-auto cursor-pointer"}>
+                                <a key={route.id} onClick={() => setSelectedSection(route.id)} className={"pointer-events-auto cursor-pointer hover:bg-rating rounded-lg transition-all px-3 py-2"}>
                                     {route.name}
                                 </a>
                             ))
@@ -90,7 +95,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

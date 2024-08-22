@@ -1,13 +1,21 @@
+"use client";
+
 import React from 'react';
 import {Input} from "@/components/ui/Input";
 import {Button} from "@/components/ui/Button";
 import Image from "next/image";
-import {MapPinHouse, Phone} from "lucide-react";
+import {Mail, MapPinHouse, Phone} from "lucide-react";
+import { motion } from 'framer-motion';
 
 const ContactUs = () => {
     return (
         <div id={"contactus"} className={"w-full flex"}>
-            <div className={"w-full h-full flex flex-col gap-6 mx-16 my-16"}>
+            <motion.div className={"w-full h-full flex flex-col gap-6 mx-16 my-16"}
+                        whileInView={{opacity: 1}}
+                        initial={{opacity: 0}}
+                        transition={{duration: 1.5}}
+                        viewport={{once: true}}
+            >
                 <h2 className={"text-4xl font-bold"}>
                     Bize Ulaş
                 </h2>
@@ -35,6 +43,16 @@ const ContactUs = () => {
                                     </a>
                                 </p>
                             </div>
+                            <div className={"flex gap-2 items-center"}>
+                                <div className={"flex w-11 h-11 justify-center items-center rounded-full bg-rating"}>
+                                    <Mail className={"text-white"}/>
+                                </div>
+                                <p className={""}>
+                                    <a href={"mailto:rainbowvet34@gmail.com"}>
+                                        rainbowvet34@gmail.com
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div className={"flex flex-col w-full h-full gap-4"}>
@@ -57,7 +75,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

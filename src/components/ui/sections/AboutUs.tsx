@@ -1,10 +1,21 @@
+"use client";
+
 import React from 'react';
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 const AboutUs = () => {
     return (
         <div id={"aboutus"} className={"w-full flex"}>
-            <div className={"w-full h-full flex gap-6 mx-16 my-16"}>
+            <motion.div className={"w-full h-full flex gap-12 mx-16 my-16"}
+                        whileInView={{opacity: 1}}
+                        initial={{opacity: 0}}
+                        transition={{duration: 1.5}}
+                        viewport={{once: true}}
+            >
+                <div className={"flex md:hidden"}>
+                    <Image src={"/aboutus.jpg"} alt={"About Us"} width={1024} height={1024} className={"max-w-[36rem] max-h-[16rem] object-cover rounded-xl"} draggable={false}/>
+                </div>
                 <div className={"flex flex-col gap-4 w-full"}>
                     <h2 className={"font-bold text-4xl"}>
                         Hakkımızda
@@ -20,10 +31,7 @@ const AboutUs = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
                     </p>
                 </div>
-                <div className={"flex w-full md:hidden"}>
-                    <Image src={"/aboutus.jpg"} alt={"About Us"} width={1024} height={1024} className={"w-full h-full max-h-[16rem] rounded-lg object-cover"} draggable={false}/>
-                </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

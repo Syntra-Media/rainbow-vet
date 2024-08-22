@@ -1,5 +1,6 @@
 import React from 'react';
 import {Instagram, Linkedin, Twitter} from "lucide-react";
+import {FaTiktok} from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -14,15 +15,12 @@ const Footer = () => {
                             Evcil dostlarınızın sağlığı için 7/24 yanınızdayız. Profesyonel ekibimiz ve modern ekipmanlarımızla, güvenli ve sevgi dolu bir ortamda en iyi veteriner hizmetini sunuyoruz. Bize her zaman ulaşabilirsiniz!
                         </p>
                         <div className={"flex gap-4 mt-2"}>
-                            <div className={"flex items-center justify-center bg-rating rounded-full w-12 h-12"}>
+                            <a className={"flex items-center justify-center bg-rating rounded-full w-12 h-12"} href={"https://www.instagram.com/rainbow_veteriner/"}>
                                 <Instagram/>
-                            </div>
-                            <div className={"flex items-center justify-center bg-rating rounded-full w-12 h-12"}>
-                                <Twitter />
-                            </div>
-                            <div className={"flex items-center justify-center bg-rating rounded-full w-12 h-12"}>
-                                <Linkedin />
-                            </div>
+                            </a>
+                            <a className={"flex items-center justify-center bg-rating rounded-full w-12 h-12"} href={"https://www.tiktok.com/@rainbow_veteriner"}>
+                                <FaTiktok />
+                            </a>
                         </div>
                     </div>
                     <div className={"w-full h-full flex flex-col items-end gap-4 md:items-start"}>
@@ -44,7 +42,7 @@ const Footer = () => {
                             </a>
                         </div>
                         <p className={"text-xs text-black/50"}>
-                            © 2021 Rainbow Veteriner Kliniği. Tüm hakları saklıdır.
+                            © 2024 Rainbow Veteriner Kliniği. Tüm hakları saklıdır.
                         </p>
                     </div>
                 </div>
