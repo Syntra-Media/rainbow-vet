@@ -42,7 +42,7 @@ const Footer = () => {
                             </a>
                         </div>
                         <p className={"text-xs text-black/50"}>
-                            © 2024 Rainbow Veteriner Kliniği. Tüm hakları saklıdır.
+                            © 2024 Rainbow Veteriner Kliniği. <a href="https://syntramedia.com" target="_blank" rel="dofollow"><strong>Syntra Media</strong></a> tarafından geliştirildi. Tüm hakları saklıdır.
                         </p>
                     </div>
                 </div>

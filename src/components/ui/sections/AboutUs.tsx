@@ -21,14 +21,8 @@ const AboutUs = () => {
                         Hakkımızda
                     </h2>
                     <p className={"leading-normal text-black/60"}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui ac nunc ultrices
+                        
+Ulus ve Beşiktaş'ın kalbinde yer alan Rainbow Veteriner Kliniği, İstanbul'daki en güvenilir ve en kapsamlı veteriner hizmetlerini sunmaktadır. 7/24 açık olan kliniğimiz, acil durumlar dahil olmak üzere cerrahi müdahaleler, genel sağlık kontrolleri ve aşılamadan, parazit tedavilerine kadar geniş bir hizmet yelpazesi sunmaktadır. Zorlu, Kuruçeşme ve Rumelihisarı gibi çevre semtlerdeki evcil hayvan sahiplerine de kaliteli ve etkili veteriner hizmeti sunarak, dostlarınızın sağlığını ön planda tutuyoruz. Uzman kadromuz ve modern ekipmanlarımız ile, evcil hayvanlarınızın ihtiyaç duyduğu her an yanınızdayız. Rainbow Veteriner Kliniği, en iyi dostlarınızın sağlığı ve güvenliği için tercih edeceğiniz en doğru adres!
                     </p>
                 </div>
             </motion.div>

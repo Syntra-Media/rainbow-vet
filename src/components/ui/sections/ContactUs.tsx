@@ -48,8 +48,8 @@ const ContactUs = () => {
                                     <Mail className={"text-white"}/>
                                 </div>
                                 <p className={""}>
-                                    <a href={"mailto:rainbowvet34@gmail.com"}>
-                                        rainbowvet34@gmail.com
+                                    <a href={"mailto:rainbow.vet34@gmail.com"} rel="nofollow norefferer noopener">
+                                        rainbow.vet34@gmail.com
                                     </a>
                                 </p>
                             </div>
@@ -69,7 +69,7 @@ const ContactUs = () => {
                         </form>
                         <div className={"flex flex-col w-full h-full gap-2 justify-center text-center text-sm text-black/50"}>
                             <Image src={"/map.png"} alt={"Map"} width={1024} height={1024} className={"hidden sm:block w-96 h-96 object-cover"} draggable={false}/>
-                            <p>
+                            <p className="hidden sm:block">
                                 Öz Topuz Cd. Huzur Apartmanı No:5/B, Beşiktaş/İstanbul
                             </p>
                         </div>
