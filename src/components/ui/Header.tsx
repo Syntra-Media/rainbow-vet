@@ -42,7 +42,7 @@ const Header = () => {
         if (isMenuOpen) {
             setIsMenuOpen(false);
         }
-    }, [selectedSection]);
+    }, [isMenuOpen,selectedSection]);
 
     return (
         <motion.div className={"absolute w-full h-24 flex"}
