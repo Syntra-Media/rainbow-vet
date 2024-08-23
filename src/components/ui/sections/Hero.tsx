@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 
 const Hero = () => {
     return (
-        <div id={"home"} className={"w-full h-screen flex bg-[url('/background.jpg')] bg-cover"}>
+        <div id={"home"} className={"w-full h-screen flex bg-[url('/background.jpg')] bg-center bg-cover"}>
             <motion.div className={"w-full h-full flex flex-col items-center justify-center bg-black/60 text-white text-center"}
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
