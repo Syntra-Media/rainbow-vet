@@ -21,9 +21,9 @@ const ContactUs = () => {
                 </h2>
                 <div className={"w-full h-full flex gap-4"}>
                     <div className={"flex flex-col gap-4 w-full h-full sm:hidden"}>
-                        <div className={"w-full h-60"}>
+                        <a className={"w-full h-60"} href={"https://maps.app.goo.gl/6i4dS9hWoL8qNPRL7"} rel={"nofollow"} target={"_blank"}>
                             <Image src={"/map.png"} alt={"Map"} width={1024} height={1024} className={"w-full h-full object-cover"} draggable={false}/>
-                        </div>
+                        </a>
                         <div className={"flex flex-col gap-4 w-full"}>
                             <div className={"flex gap-2 items-center"}>
                                 <div className={"flex w-11 h-11 justify-center items-center rounded-full bg-rating"}>
@@ -67,12 +67,12 @@ const ContactUs = () => {
                                 Gönder
                             </Button>
                         </form>
-                        <div className={"flex flex-col w-full h-full gap-2 justify-center text-center text-sm text-black/50"}>
+                        <a className={"flex flex-col w-full h-full gap-2 justify-center text-center text-sm text-black/50"} href={"https://maps.app.goo.gl/6i4dS9hWoL8qNPRL7"} rel={"nofollow"} target={"_blank"}>
                             <Image src={"/map.png"} alt={"Map"} width={1024} height={1024} className={"hidden sm:block w-96 h-96 object-cover"} draggable={false}/>
                             <p className="hidden sm:block">
                                 Öz Topuz Cd. Huzur Apartmanı No:5/B, Beşiktaş/İstanbul
                             </p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </motion.div>
