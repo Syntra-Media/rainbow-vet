@@ -21,8 +21,10 @@ const ContactUs = () => {
                 </h2>
                 <div className={"w-full h-full flex gap-4"}>
                     <div className={"flex flex-col gap-4 w-full h-full sm:hidden"}>
-                        <div className={"w-full h-60"}>
-                            <Image src={"/map.png"} alt={"Map"} width={1024} height={1024} className={"w-full h-full object-cover"} draggable={false}/>
+                        <div className={"w-full h-60"}>    
+                            <a href={"https://maps.app.goo.gl/hbBbyESc7W1Lwm6Z7"} rel="nofollow norefferer noopener" target={"_blank"}>
+                                <Image src={"/map.png"} alt={"Map"} width={1024} height={1024} className={"w-full h-full object-cover"} draggable={false}/>
+                            </a>
                         </div>
                         <div className={"flex flex-col gap-4 w-full"}>
                             <div className={"flex gap-2 items-center"}>
@@ -68,7 +70,9 @@ const ContactUs = () => {
                             </Button>
                         </form>
                         <div className={"flex flex-col w-full h-full gap-2 justify-center text-center text-sm text-black/50"}>
+                            <a href={"https://maps.app.goo.gl/hbBbyESc7W1Lwm6Z7"} rel="nofollow norefferer noopener" target={"_blank"}>
                             <Image src={"/map.png"} alt={"Map"} width={1024} height={1024} className={"hidden sm:block w-96 h-96 object-cover"} draggable={false}/>
+                            </a>
                             <p className="hidden sm:block">
                                 Öz Topuz Cd. Huzur Apartmanı No:5/B, Beşiktaş/İstanbul
                             </p>
