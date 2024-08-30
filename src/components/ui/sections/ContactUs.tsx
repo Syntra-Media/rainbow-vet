@@ -67,12 +67,12 @@ const ContactUs = () => {
                                 Gönder
                             </Button>
                         </form>
-                        <a className={"flex flex-col w-full h-full gap-2 justify-center text-center text-sm text-black/50"} href={"https://maps.app.goo.gl/6i4dS9hWoL8qNPRL7"}>
+                        <div className={"flex flex-col w-full h-full gap-2 justify-center text-center text-sm text-black/50"}>
                             <Image src={"/map.png"} alt={"Map"} width={1024} height={1024} className={"hidden sm:block w-96 h-96 object-cover"} draggable={false}/>
                             <p className="hidden sm:block">
                                 Öz Topuz Cd. Huzur Apartmanı No:5/B, Beşiktaş/İstanbul
                             </p>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </motion.div>

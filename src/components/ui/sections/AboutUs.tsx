@@ -14,7 +14,8 @@ const AboutUs = () => {
                         viewport={{once: true}}
             >
                 <div className={"flex md:hidden"}>
-                    <Image src={"/aboutus.jpg"} alt={"About Us"} width={1024} height={1024} className={"max-w-[36rem] max-h-[16rem] object-cover rounded-xl"} draggable={false}/>
+                    <Image src={"/rainbow-beşiktaş-ulus-veteriner-kliniği-beyazıt-açıkgöz.jpg"} alt={"About Us"} width={240} height={1100} className={"max-w-[36rem] max-h-[16rem] object-cover rounded-xl"} draggable={false}/>
+                    <Image src={"/rainbow-beşiktaş-ulus-veteriner-kliniği-beyazıt-açıkgöz-2.jpg"} alt={"About Us"} width={240} height={1100} className={"max-w-[36rem] max-h-[16rem] object-cover rounded-xl"} draggable={false}/>
                 </div>
                 <div className={"flex flex-col gap-4 w-full"}>
                     <h2 className={"font-bold text-4xl"}>
