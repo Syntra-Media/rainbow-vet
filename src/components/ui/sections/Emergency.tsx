@@ -35,7 +35,7 @@ const Emergency = () => {
                     </div>
                     <p className={"w-full font-light text-black/90 sm:hidden"}>
                         Evcil dostlarınızın sağlığı bizim için her şeyden önce gelir. Bu nedenle, Rainbow Veteriner
-                        Kliniği olarak haftanın 7 günü, 24 saat boyunca hizmetinizdeyiz. Acil bir durumda asla yalnız
+                        Kliniği olarak hafta içi ve Cumartesi sabah 9 - akşam 8 boyunca hizmetinizdeyiz. Acil bir durumda asla yalnız
                         değilsiniz; uzman ekibimiz, gece gündüz demeden dostlarınızın yanında. İster gece yarısı olsun,
                         ister hafta sonu, kapımız her zaman açık. Anında müdahale gerektiren durumlarda bize güvenle başvurabilirsiniz. Evcil hayvanınızın sağlığı söz konusu olduğunda, hiçbir zaman beklemek zorunda kalmayacaksınız.
                     </p>
