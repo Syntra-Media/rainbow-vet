@@ -20,7 +20,7 @@ const Emergency = () => {
                     <div className={"flex flex-col items-center gap-4 w-64"}>
                         <div className={"flex flex-col w-64 h-32 sm:w-full md:h-48 bg-cardComponent border border-stroke rounded-lg items-center justify-center"}>
                             <p className={"text-rating font-medium text-4xl"}>
-                                7/24
+                                Pazartesi - Cumartesi(09.00-20.00)
                             </p>
                             <p>
                                 açık
