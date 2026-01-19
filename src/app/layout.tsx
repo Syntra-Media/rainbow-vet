@@ -6,8 +6,8 @@ import Script from "next/script";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-    title: "Rainbow Veteriner Kliniği - 7/24 Açık",
-    description: "Rainbow Veteriner Kliniği, 7/24 açık, ulaşılabilir, güvenilir ve kaliteli hizmet sunmaktadır. Ulus ve Beşiktaş'ın göbeğinde yer alan kliniğimizde, evcil dostlarınızın sağlığı bizim için önemlidir.",
+    title: "Rainbow Veteriner Kliniği",
+    description: "Rainbow Veteriner Kliniği, ulaşılabilir, güvenilir ve kaliteli hizmet sunmaktadır. Ulus ve Beşiktaş'ın göbeğinde yer alan kliniğimizde, evcil dostlarınızın sağlığı bizim için önemlidir.",
 };
 
 export default function RootLayout({
